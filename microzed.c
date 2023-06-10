@@ -11,8 +11,6 @@
 #define FS 1000.0 // Sample rate of our data
 #define WINDOW_SIZE 250000 // This is our window size
 
-
-
 double data[DATA_SIZE]; // The array to hold our input data
 
 // ... (Other function definitions)
