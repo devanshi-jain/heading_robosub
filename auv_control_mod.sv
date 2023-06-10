@@ -1,7 +1,8 @@
 module AUV_Control (
-  input wire [2:0] pinger_position[3], // Pinger's estimated position in 3D space
-  input wire [2:0] auv_position[3], // AUV's current position in 3D space
-  input wire [2:0] auv_orientation[3], // AUV's current orientation in 3D space
+  input wire [7:0] pinger_position[3], // (each should be 8 bits wide
+  )// Pinger's estimated position in 3D space // relative to the AUV
+  // input wire [2:0] auv_position[3], // AUV's current position in 3D space
+  // input wire [2:0] auv_orientation[3], // AUV's current orientation in 3D space
   output wire [2:0] heading[3] // Calculated heading for the AUV
 );
   // Implement AUV control logic here
